@@ -1,0 +1,110 @@
+/*Header */
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+/*Gestion du logo*/
+
+.logo {
+    width: 50px;
+  /*height: 20px; */
+  padding: 30px 0px 30px 0px;
+   
+}
+
+
+
+
+/*Gestion de la barre de navigation*/
+
+.nav {
+    display: flex;
+    padding: 30px 0px 30px 0px; 
+    gap: 68px;
+    position: relative;
+    margin: 0px; 
+    }
+
+ul{
+    list-style-type:none;
+}
+
+.navbarre{
+    display: flex;
+    flex-direction: row;
+    border-top: 2px solid rgba(0, 0, 0, 0);
+    padding: 30px 0px 30px 0px;
+    font-size: 16px;
+    
+}
+/*Effet de survol*/
+
+.navbarre:hover{
+    color : var(--main-color);
+    border-top: 2px solid var(--main-color);
+    /*padding: 14px 0px 0px 0px; */
+    margin: 0px;
+}
+
+
+h1 h2{
+    font-size: 22px;
+}
+
+h3 a p{
+    font-size: 16px;
+}
+
+h4{
+    font-size: 18px;
+}
+
+p{
+    margin-top: 0px;
+}
+
+
+/* La version responsive uniquement */
+
+/****** Media queries ***********/
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header nav {
+        width: 100%;
+    }
+
+    .nav{
+        gap: 0px;
+        padding: 0px;
+    }
+    
+    .header nav li {
+        width: 50%;
+    }
+
+    .navbarre{
+        border-bottom: 2px solid rgba(0, 0, 0, 0);
+        padding: 0px 0px 14px 0px;
+        border-top: none;
+        justify-content: center;
+    }
+
+    .navbarre:hover{
+        border-bottom: 2px solid var(--main-color);
+        /*padding: 0px 0px 14px 0px; */
+        border-top: none;
+    }
+}

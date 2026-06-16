@@ -1,0 +1,139 @@
+/************Section Les Activités************/
+
+.activities {
+    width: 100%;
+    padding: 30px;
+}
+
+
+/*TITRE H2*/
+
+.activite-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Regroupement des cartes*/
+.activities-cards{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 30px;
+    margin-top: 33px;
+}
+
+/*Carte type*/
+
+.standard-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 25%;
+    max-height: 439px; 
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    gap: 4px;
+}
+
+.standard-card img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 380px;
+    height:100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: 0;
+}
+.standard-card a{
+    height: 100%;
+}
+.standard-card .card-content{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.standard-card .card-title{
+    margin: 20px;
+}
+
+/* La version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+
+@media (max-width: 1024px) {
+
+    .section-title {
+        margin-top: 20px; 
+        margin-bottom: 15px; 
+        
+    }
+   
+    .activities{
+        width: 100%;
+        padding: 30px;
+    }
+
+/* Regroupement des cartes*/
+
+.activities-cards{
+    gap: 15px;
+}
+
+/*Carte type*/
+
+    .standard-card{
+        max-height: 270px;
+    }
+ 
+    .standard-card img {
+        max-height: 200px;
+    }
+
+    .standard-card .card-title{
+        font-size: 14px;
+    }
+
+    .standard-card .card-content {
+        max-height: 70px;
+    }
+ 
+ }
+
+/* Small devices (phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+
+    .section-title {
+        margin-top: 20px; 
+        margin-bottom: 15px; 
+        font-size: 18px; 
+    }
+    
+
+/* Regroupement des cartes*/
+
+.activities-cards{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    margin-top: 33px;
+}
+
+/*Carte type*/
+
+    .standard-card {
+        width: 100%;  
+        max-height: 200px; 
+}
+
+.standard-card img {
+    max-height: 141px;
+}
+
+.standard-card .card-title{
+    font-size: 13px;
+}
+}
